@@ -7,4 +7,5 @@ public class Image {
     public String getMedium() {
         return medium;
     }
+    public String getOriginal(){ return original;}
 }

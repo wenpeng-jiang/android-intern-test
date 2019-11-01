@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">android-intern-test</string>
     <string name="api">http://api.tvmaze.com/shows/1/episodes</string>
+    <string name="id">ID</string>
+    <string name="url">URL</string>
+    <string name="name">NAME</string>
+    <string name="season">SEASON</string>
+    <string name="number">NUMBER</string>
+    <string name="airdate">DATE</string>
+    <string name="airtime">TIME</string>
+    <string name="airstamp">STAMP</string>
+    <string name="runtime">RUN TIME</string>
+    <string name="image">IMAGE</string>
+    <string name="summary">SUMMARY</string>
+    <string name="links">LINK</string>
 </resources>

@@ -8,6 +8,7 @@ public class Shows {
     private String url;
     private String name;
     private int season;
+    private int number;
     private String airdate;
     private String airtime;
     private Timestamp airstamp;
@@ -16,11 +17,12 @@ public class Shows {
     private String summary;
     private Links _links;
 
-    public Shows(int id, String url, String name, int season, String airdate, String airtime, Timestamp airstamp, int runtime, Image image, String summary, Links _links) {
+    public Shows(int id, String url, String name, int season, int number, String airdate, String airtime, Timestamp airstamp, int runtime, Image image, String summary, Links _links) {
         this.id = id;
         this.url = url;
         this.name = name;
         this.season = season;
+        this.number = number;
         this.airdate = airdate;
         this.airtime = airtime;
         this.airstamp = airstamp;
@@ -28,6 +30,14 @@ public class Shows {
         this.image = image;
         this.summary = summary;
         this._links = _links;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public void setId(int id) {

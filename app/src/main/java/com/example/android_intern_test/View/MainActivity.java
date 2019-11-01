@@ -71,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
                     Response response = client.newCall(request).execute();
                     //convert json to string
                     String responseData = response.body().string();
-                    Log.d("MainActivity", responseData);
                     parseJSONWithGSON(responseData);
                     //send message to handler after update
                     Message message = new Message();
@@ -87,8 +86,5 @@ public class MainActivity extends AppCompatActivity {
     private void parseJSONWithGSON(String jsonData){
         Gson gson = new Gson();
         showsList = gson.fromJson(jsonData, new TypeToken<List<Shows>>(){}.getType());
-        for (Shows shows: showsList){
-            Log.d("MainActivity", "id is " + shows.getImage().getMedium());
-        }
     }
 }
