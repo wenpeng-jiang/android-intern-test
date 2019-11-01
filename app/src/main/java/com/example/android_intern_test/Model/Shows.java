@@ -12,12 +12,66 @@ public class Shows {
     private String airtime;
     private Timestamp airstamp;
     private int runtime;
-    private List<String> image;
+    private Image image;
     private String summary;
-    private List<List<String>> _links;
+    private Links _links;
 
-    public Shows(String summary){
+    public Shows(int id, String url, String name, int season, String airdate, String airtime, Timestamp airstamp, int runtime, Image image, String summary, Links _links) {
+        this.id = id;
+        this.url = url;
+        this.name = name;
+        this.season = season;
+        this.airdate = airdate;
+        this.airtime = airtime;
+        this.airstamp = airstamp;
+        this.runtime = runtime;
+        this.image = image;
         this.summary = summary;
+        this._links = _links;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSeason(int season) {
+        this.season = season;
+    }
+
+    public void setAirdate(String airdate) {
+        this.airdate = airdate;
+    }
+
+    public void setAirtime(String airtime) {
+        this.airtime = airtime;
+    }
+
+    public void setAirstamp(Timestamp airstamp) {
+        this.airstamp = airstamp;
+    }
+
+    public void setRuntime(int runtime) {
+        this.runtime = runtime;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public void set_links(Links _links) {
+        this._links = _links;
     }
 
     public int getId() {
@@ -52,7 +106,7 @@ public class Shows {
         return runtime;
     }
 
-    public List<String> getImage() {
+    public Image getImage() {
         return image;
     }
 
@@ -60,7 +114,7 @@ public class Shows {
         return summary;
     }
 
-    public List<List<String>> get_links() {
+    public Links get_links() {
         return _links;
     }
 }

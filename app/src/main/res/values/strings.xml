@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">android-intern-test</string>
+    <string name="api">http://api.tvmaze.com/shows/1/episodes</string>
 </resources>
