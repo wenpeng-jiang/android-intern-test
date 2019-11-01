@@ -6,11 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.widget.LinearLayout;
-
 import com.example.android_intern_test.Adapter.ShowAdapter;
-import com.example.android_intern_test.AsyncTask.AsyncDownloadImage;
 import com.example.android_intern_test.Model.Shows;
 import com.example.android_intern_test.R;
 import com.google.gson.Gson;

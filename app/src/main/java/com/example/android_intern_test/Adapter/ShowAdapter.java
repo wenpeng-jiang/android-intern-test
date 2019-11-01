@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,7 +70,6 @@ public class ShowAdapter extends RecyclerView.Adapter<ShowAdapter.ViewHolder> {
                 intent.putExtra(view.getContext().getString(R.string.summary),show.getSummary());
                 intent.putExtra(view.getContext().getString(R.string.links),show.get_links().getSelf().getHref());
 
-                Log.d("ShowDetail", show.getUrl() + show.getId() + show.getAirstamp());
                 view.getContext().startActivity(intent);
             }
         });
